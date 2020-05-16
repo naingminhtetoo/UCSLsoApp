@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class and Element</title>
+</head>
+<style>
+    .panel1 {
+        padding: 50px;
+        background-color: darkcyan;
+        display: inline-block;
+        color: white;
+        transition: .5s;
+    }
+    .panel1:hover{
+        background-color: tomato;
+    }
+    .panel2 {
+        padding: 50px;
+        background-color: lightcoral;
+        display: inline-block;
+    }
+    .panel2:active {
+        background-color: turquoise;
+    }
+    .panel3 {
+        padding: 50px;
+        background-color: rgb(221, 17, 17);
+        display: inline-block;
+        color: white;
+    }
+    .element {
+        display: inline-block;
+    }
+    .element::before {
+        content: "JB";
+    }
+    .element::after {
+        content: "Yeah";
+    }
+</style>
+<body>
+    <div class="panel1">
+        <p>Hover me</p>
+    </div>
+
+    <div class="panel2">
+        <p>click me</p>
+    </div>
+    <div class="panel3">
+        <p>focus me</p>
+    </div>
+
+    <hr>
+
+    <div class="element">
+        <p>Hello World</p>
+    </div>
+</body>
+</html>
